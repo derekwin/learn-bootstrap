@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BOOTSTRAP learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container" style="background-color:lightgray">
+        <div class="row">
+            <div class="form-inline" role="form">
+                <!-- <div class="form-group col-xs-"></div> -->
+                <div class="form-group col-xs-12 ">
+                    <label>please login in</label>
+                    <input type="text" class="form-control" id="name" placeholder="please input name">
+                    <input type="text" class="form-control" id="password" placeholder="password" >
+                    <button type="submit" style="background:yellow">login in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron" style="background-color:paleturquoise">
+            <h1 class="text-center">first bootstrap page<small>.try a small title</small></h1>
+            <p class="text-center">for test</p>
+        </div>
+        <div class="row" style="background-color:skyblue ;box-shadow: 1px 1px 1px blue,-1px -1px 1px blue;">
+            <div class="col-xs-4" style="box-shadow:1px 1px 1px orange">
+                <br>
+                <h3>first col</h3>
+                <p>test col test
+                </p>
+                <h3>test</h3>
+                <abbr title="abbr的应用">abbr</abbr>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="col-xs-4">
+                <br>
+                <blockquote><h4>first</h4></blockquote>
+                <h4>second</h4>
+                <p><strong>测试</strong><em>引导</em>主体<small>副本</small></p>
+                <p class="lead">测试引导主体副本</p>
+            </div>
+            <div class="col-xs-4 col-xs-4">
+                <br>
+                <img class="img-thumbnail" src="/static/pic/dog.jpg">
+                .img-thumbnail
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <div class="row" style="box-shadow:1px 1px 1px blue,-1px -1px 1px blue;">
+        <div class="col-xs-3" style="box-shadow:1px 1px 1px blue,-1px -1px 1px blue;">
+            <h4>有序列表</h4>
+            <ol>
+                <li>term1</li>
+                <li>term2</li>
+                <li>term3</li>
+                <li>term4</li>
+            </ol>
+        </div>
+        <div class="col-xs-3" style="box-shadow:1px 1px 1px blue,-1px -1px 1px blue;">
+            <h4>无序列表</h4>
+            <ul>
+                <li>term1</li>
+                <li>term2</li>
+                <li>term3</li>
+                <li>term4</li>
+            </ul>
+        </div>
+        <div class="col-xs-3" style="box-shadow:1px 1px 1px blue,-1px -1px 1px blue;">
+            <h4>未定义样式列表</h4>
+            <ul class="list-unstyled">
+                <li>term1</li>
+                <li>term2</li>
+                <li>term3</li>
+                <li>term4</li>
+            </ul>
+        </div>
+        <div class="col-xs-3" style="box-shadow:1px 1px 1px blue,-1px -1px 1px blue;">
+            <h4>定义列表</h4>
+            <dl>
+                <dt>description1</dt>
+                <dd>term1</dd>
+                <dt>description2</dt>
+                <dd>term2</dd>
+            </dl>
+        </div>
+        <div class="col-xs-6" style="box-shadow:1px 1px 1px blue,-1px -1px 1px blue;">
+            <h4>内联列表</h4>
+            <ul class="list-inline">
+                <li>term1</li>
+                <li>term2</li>
+                <li>term3</li>
+                <li>term4</li>
+            </ul>
+        </div>
+        <div class="col-xs-6" style="box-shadow:1px 1px 1px blue,-1px -1px 1px blue;">
+            <h4>水平定义列表</h4>
+            <dl class="dl-horizontal">
+                    <dt>description1</dt>
+                    <dd>term1</dd>
+                    <dt>description2</dt>
+                    <dd>term2</dd>                
+            </dl>
+        </div>
+    </div>
+    <div>
+        <div class="h3">
+            代码实例
+        </div>
+        <ul>
+            <li><code>from flask import Flask</code>嵌入式代码
+            <div><br></div>
+            <li><pre style="text-left">
+            /*引入一段代码*/
+            import flask
+            app=flask.Flask(app)
+            </pre></li>
+        </ul>
+    </div>
+    <div >
+        <table class="table table-responsive table-bordered table-hover table-striped">
+            <caption>
+                响应式表格构建
+            </caption>
+            <thead>
+                <tr>
+                    <th>行1</th>
+                    <th>行2</th>
+                    <th>行3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>列1</th>
+                    <td>内容1</td>
+                    <td>内容2</td>
+                </tr>
+                <tr>
+                    <th>列2</th>
+                    <td>内容3</td>
+                    <td>内容4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="row" style="box-shadow: 1px 1px 1px blue,-1px -1px 1px blue">
+            <div class="form-horizontal" role="form" style="box-shadow: 1px 1px 1px pink,-1px -1px 1px pink">
+                <ul>
+                <div class="form-group">
+                    <label class="col-sm-2">请选择文件</label>
+                    <input class="col-sm-10" type="file">
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2"><input type="checkbox">同意</label>
+                    <button class="col-sm-2" type="submit">submit</button>
+                </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <img class="img-thumbnail" src="/static/pic/adidas.jpg">
+            </div>
+            <div class="col-xs-4">
+                <img class="img-thumbnail" src="/static/pic/beach.jpg">
+            </div>
+            <div class="col-xs-4">
+                <img class="img-thumbnail" src="/static/pic/dogflower.jpg">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div>
+            <address>
+                <strong>company SECLEE.inc </strong>
+                <br>Street,CHANGCHUN
+                <br>NAME,SECLEE
+                <br>Phone:XXXXX
+            </address>
+        </div>   
+    </div>        
+    
+</body>
+</html>
